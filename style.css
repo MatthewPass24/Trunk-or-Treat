@@ -1,7 +1,39 @@
-body{
-    background-color: rgb(42, 7, 53);
-}
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+body {
+    overflow: hidden; /* Hide scrollbars */
+  }
+.banner{
+    background-image: url('images/Halloween-HD-Wallpapers.jpg');
+    height: 100vh;
+    margin-top: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: overlay;
+    background-color: #19002050;   
+  }
 .logo{
     text-align: center;
     padding: 3em;
+}
+h1{
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+color: orange;
+justify-content: center;
+text-align: center;
+  
+}
+nav {
+    background-color: rgb(10, 1, 32);
+}
+.nav-link {
+    color: orange;
+    font-family: "Creepster", system-ui;
+    font-size: 1.4em;
 }
