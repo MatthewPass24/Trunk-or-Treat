@@ -37,3 +37,9 @@ nav {
     font-family: "Creepster", system-ui;
     font-size: 1.4em;
 }
+.nav-link:hover {
+    color: white;
+    font-family: "Creepster", system-ui;
+    font-size: 1.4em;
+    text-shadow: 0 0 10px #fff, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 50px #ff4da6, 0 0 40px orange;
+}

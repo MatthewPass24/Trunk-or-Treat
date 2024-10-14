@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+body{
+    background-color: rgb(49, 27, 75);
+}
+nav {
+    background-color: rgb(10, 1, 32);
+}
+h1{
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+color: orange;
+justify-content: center;
+text-align: center;
+margin-top: 1em;
+margin-bottom: 0.5em;
+
+}
+.nav-link {
+    color: orange;
+    font-family: "Creepster", system-ui;
+    font-size: 1.4em;
+}
+.nav-link:hover {
+    color: white;
+    font-family: "Creepster", system-ui;
+    font-size: 1.4em;
+    text-shadow: 0 0 10px #fff, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 50px #ff4da6, 0 0 40px orange;
+}
+.gallery {
+    position: relative;
+    padding: 1.5em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 2em;
+}
+
+.gallery img {
+    border-radius: 10px;
+    width: 100%; 
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery:hover {
+    transform: scale(1.02); 
+}
+
+.gallery:hover img {
+    transform: scale(1.02); 
+    box-shadow: 8px 10px 12px 8px rgba(0, 0, 0, 0.808);
+}
+
+.description {
+    text-align: center;
+    color: #f7941e; 
+    font-family: 'Shadows Into Light', cursive; 
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.card__img {
+    width: 100%;
+    border-radius: .5rem;
+  }
+  
+
+.infoBtn {
+    margin: -3rem 3rem;
+    margin-bottom: 3em;
+    padding: .65rem 1rem 1rem;
+    position: relative;
+    z-index: 1;
+    border-radius: .5rem;
+  }
