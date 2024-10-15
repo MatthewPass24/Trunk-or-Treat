@@ -18,19 +18,28 @@
         <!-- place navbar here -->
         <nav class="navbar navbar-expand-lg  navbar-dark">
             <div class="container-fluid">
-                <ul class="navbar-nav d-flex justify-content-center flex-row w-100">
-                    <li class="nav-item mx-3"> <!-- Added mx-2 for horizontal margin -->
-                        <a class="nav-link navhover navText" aria-current="page" href="index.html">Home Page </a>
-                    </li>
-                    <li class="nav-item mx-3"> <!-- Added mx-2 for horizontal margin -->
-                        <a class="nav-link navhover navText" href="Showcase.html">Showcase</a>
-                    </li>
-                    <li class="nav-item mx-3"> <!-- Added mx-2 for horizontal margin -->
-                        <a class="nav-link navhover navText" href="">Schedule</a>
-                    </li>
-                </ul>
+              <a class="navbar-brand" href="#">
+                <img class="icon" src="images/skull.png">
+              </a>
+      
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon justify-content-center"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <ul class="navbar-nav ms-auto me-4 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item mx-3"> <!-- Added mx-2 for horizontal margin -->
+                  <a class="nav-link navhover navText" aria-current="page" href="index.html">Home Page </a>
+                </li>
+                <li class="nav-item mx-3"> <!-- Added mx-2 for horizontal margin -->
+                  <a class="nav-link navhover navText" href="Showcase.html">Showcase</a>
+                </li>
+                <li class="nav-item mx-3"> <!-- Added mx-2 for horizontal margin -->
+                  <a class="nav-link navhover navText" href="">Schedule</a>
+                </li>
+              </ul>
             </div>
-        </nav>
+          </nav>
     </header>
     <main>
 
@@ -42,9 +51,9 @@
                     <img src="images/ship.jpg" class="img-fluid" alt="">
                     </a>
 
-                    <button class="infoBtn" data-description="PUT TEXT HERE">
+                    <button class="infoBtn" id="moreBtn" data-description="This is an old ship decorated trunk!">
                         <div class="card__data">
-                            <h2 class="card__title">Learn More</h2>
+                            <h3 class="card__title">Learn More</h3>
                         </div>
                     </button>
                 </div>
@@ -54,9 +63,9 @@
                     </a>
 
 
-                    <button class="infoBtn" data-description="Second trunk featuring a haunted house theme.">
+                    <button class="infoBtn" id="moreBtn" data-description="Second trunk featuring a haunted house theme.">
                         <div class="card__data">
-                            <h2 class="card__title">Learn More</h2>
+                            <h3 class="card__title">Learn More</h3>
                         </div>
                     </button>
                 </div>
@@ -64,9 +73,9 @@
                 <div class="col-12 col-md-4 gallery mb-4 text-center" id="imgHover">
                     <img src="images/ninja.jpg" class="img-fluid" alt="">
                     </a>
-                    <button class="infoBtn" data-description="Third trunk with a creepy graveyard setup.">
+                    <button class="infoBtn" id="moreBtn" data-description="Third trunk with a creepy graveyard setup.">
                         <div class="card__data">
-                            <h2 class="card__title">Learn More</h2>
+                            <h3 class="card__title">Learn More</h3>
                         </div>
                     </button>
                 </div>
@@ -76,9 +85,9 @@
                     <div class="col-12 col-md-4 gallery mb-4 text-center" id="imgHover">
                         <img src="images/nightmare.jpg" class="img-fluid" alt="">
                         </a>
-                        <button class="infoBtn" data-description="Duplicate of the first trunk setup.">
+                        <button class="infoBtn" id="moreBtn" data-description="Duplicate of the first trunk setup.">
                             <div class="card__data">
-                                <h2 class="card__title">Learn More</h2>
+                                <h3 class="card__title">Learn More</h3>
                             </div>
                         </button>
                     </div>
@@ -86,10 +95,10 @@
                     <div class="col-12 col-md-4 gallery mb-4 text-center" id="imgHover">
                         <img src="images/starwars.jpg" class="img-fluid" alt="">
                         </a>
-                        <button class="infoBtn"
+                        <button class="infoBtn" id="moreBtn"
                             data-description="Duplicate of the second trunk with haunted house theme.">
                             <div class="card__data">
-                                <h2 class="card__title">Learn More</h2>
+                                <h3 class="card__title">Learn More</h3>
                             </div>
                         </button>
                     </div>
@@ -97,10 +106,10 @@
                     <div class="col-12 col-md-4 gallery mb-4 text-center" id="imgHover">
                         <img src="images/toystory.jpg" class="img-fluid" alt="">
                         </a>
-                        <button class="infoBtn"
+                        <button class="infoBtn" id="moreBtn"
                             data-description="Duplicate of the third trunk with creepy graveyard setup.">
                             <div class="card__data">
-                                <h2 class="card__title">Learn More</h2>
+                                <h3 class="card__title">Learn More</h3>
                             </div>
                         </button>
                     </div>
@@ -109,11 +118,26 @@
         </div>
 
     </main>
-    </main>
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">More Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalDescription"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <!-- place footer here -->
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
+         <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -121,6 +145,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
