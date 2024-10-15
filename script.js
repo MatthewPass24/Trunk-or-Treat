@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('#more-info').on('click', function(){
+    $('#infoBtn').on('click', function(){
         $('#info-box').show();
     })
 })
