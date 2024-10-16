@@ -1,5 +1,5 @@
 $(document).ready(function() {
-// Show description on hover
+// Show the trunk's description on hover
 $('.gallery').on('mouseenter', function() {
     $(this).find('.description').fadeIn();
 }).on('mouseleave', function() {
@@ -7,8 +7,11 @@ $('.gallery').on('mouseenter', function() {
 });
 //timeline functionality on schedule page
 $('.button a').on('click', function() {
-            const info = $(this).data('info'); // Get the data-info attribute
-            $('#modalDescription').text(info); // Set the modal content
-            $('#infoModal').modal('show'); // Show the modal
-        });
+    const info = $(this).data('info'); 
+    $('#modalDescription').text(info); 
+        $('#infoModal').modal('show'); // Show the modal
+    });
+$('.infoBtn').on('click', function() {
+    
+})
 })
