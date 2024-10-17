@@ -4,6 +4,7 @@
 body {
     overflow: hidden; /* Hide scrollbars */
   }
+/*landing page hero */
 .banner{
     background-image: url('images/Halloween-HD-Wallpapers.jpg');
     height: 100vh;
@@ -63,3 +64,29 @@ nav {
     box-shadow: 8px 10px 12px 8px rgba(0, 0, 0, 0.432);
 
   }
+  .popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+.popup img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}

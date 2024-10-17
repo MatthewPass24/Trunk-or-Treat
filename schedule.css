@@ -1,3 +1,4 @@
+/* font imports */
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
@@ -42,6 +43,7 @@ nav {
     height: 2.8em;
     margin-left: 1.5em;
 }
+/*start of timeline*/
 .wrapper {
     max-width: 1080px;
     margin: 50px auto;
@@ -52,7 +54,7 @@ nav {
     position: absolute;
     height: 100%;
     width: 4px;
-    background: #fff;
+    background: #b48ce2;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -69,18 +71,19 @@ nav {
     justify-content: flex-start;
 }
 .wrapper .row section{
-    background: #fff;
+    background: #b48ce2;
     border-radius: 5px;
     width: calc(50% - 40px);
     padding: 20px;
     position: relative;
+    color: #fff;
 }
 .wrapper .row section::before{
     position: absolute;
     content: "";
     height: 15px;
     width: 15px;
-    background: #fff;
+    background: #b48ce2;
     top: 28px;
     z-index: -1;
     transform: rotate(45deg);
@@ -98,21 +101,29 @@ nav {
 .row section .icon,
 .center-line .scroll-icon {
     position: absolute;
-    background: #fff;
+    background: #b48ce2;
     height: 40px;
     width: 40px;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: orange;
+    color: rgb(255, 255, 255);
     top: 13px;
     font-size: 17px;
-    box-shadow: 0 0 0 4px #fff, inset 0 2px rgba(0, 0, 0, 0.08), 0 3px rgba(0,0,0,0.05);
+    box-shadow: 0 0 0 4px #b48ce2, inset 0 2px rgba(0, 0, 0, 0.08), 0 3px rgba(0,0,0,0.05);
 }
 .center-line .scroll-icon{
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
+}
+span.title{
+    color: rgb(15, 3, 49);
+}
+p{
+    color: rgba(15, 3, 49, 0.733);
+    font-family: 'Poppins';
+    font-weight: 600;
 }
 .row-1 section .icon{
     top: 13px;
@@ -148,6 +159,13 @@ nav {
     font-weight: 400;
 
 }
+a.info{
+    color: rgb(15, 3, 49);
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+/*small screen visiblity*/
 @media(max-width: 772px){
     .wrapper .center-line{
         left: 40px;
